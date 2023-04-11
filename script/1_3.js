@@ -1,6 +1,6 @@
 // document.addEventListener("DOMContentLoaded", () => {});
 
-const h2 = document.querySelector("#h2id.h2Class");
+const h2 = document.querySelector("#h2id");
 h2.innerHTML = "아이디 선택자 시작입니다.";
 
 const newBtn = document.createElement("button");
@@ -15,5 +15,7 @@ form.addEventListener("submit", (e) => {
 
 const clickBtn = document.querySelector("form > button");
 clickBtn.addEventListener("click", () => {
-  h2.innerHTML = "안녕하세요";
+  // h2.innerHTML = "안녕하세요";
+  let diceNum = Math.floor(Math.random() * 6 + 1);
+  h2.innerHTML = `<img src="../img/${diceNum}.png" alt="dice num${diceNum}" / >`;
 });
