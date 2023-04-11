@@ -19,7 +19,7 @@ imgDiv.style.textAlign = "center";
 clickBtn.addEventListener("click", () => {
   // h2.innerHTML = "안녕하세요";
   let diceNum = Math.floor(Math.random() * 6) + 1;
-  imgDiv.innerHTML = `<img src="../img/${diceNum}.png" alt="dice num${diceNum}" / >`;
+  imgDiv.innerHTML = `<img src="./img/${diceNum}.png" alt="dice num${diceNum}" / >`;
 
   const checkedInput = document.querySelector("input:checked");
   if (diceNum == checkedInput.value) h2.innerHTML = "정답입니다.";
