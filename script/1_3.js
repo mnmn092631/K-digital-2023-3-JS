@@ -18,6 +18,6 @@ const imgDiv = document.querySelector("article > div");
 imgDiv.style.textAlign = "center";
 clickBtn.addEventListener("click", () => {
   // h2.innerHTML = "안녕하세요";
-  let diceNum = Math.floor(Math.random() * 6 + 1);
+  let diceNum = Math.floor(Math.random() * 6) + 1;
   imgDiv.innerHTML = `<img src="../img/${diceNum}.png" alt="dice num${diceNum}" / >`;
 });
