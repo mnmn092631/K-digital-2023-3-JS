@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <script src="./script/1_5.js"></script>
+    <title>K-digital 3기 JS</title>
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <header>
+          <h1>주사위게임</h1>
+        </header>
+        <h2 id="h2id" class="h2Class"></h2>
+        <div></div>
+        <footer>
+          <form>
+            <fieldset class="grid">
+              <legend>숫자 선택</legend>
+              <label for="dice1">
+                <input type="radio" name="dice" id="dice1" value="1" />
+                1
+              </label>
+              <label for="dice2">
+                <input type="radio" name="dice" id="dice2" value="2" />
+                2
+              </label>
+              <label for="dice3">
+                <input type="radio" name="dice" id="dice3" value="3" />
+                3
+              </label>
+              <label for="dice4">
+                <input type="radio" name="dice" id="dice4" value="4" />
+                4
+              </label>
+              <label for="dice5">
+                <input type="radio" name="dice" id="dice5" value="5" />
+                5
+              </label>
+              <label for="dice6">
+                <input type="radio" name="dice" id="dice6" value="6" />
+                6
+              </label>
+            </fieldset>
+            <div class="grid">
+              <button type="submit">확인</button>
+              <button type="reset">취소</button>
+            </div>
+          </form>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
