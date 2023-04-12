@@ -25,7 +25,7 @@ clickBtn.addEventListener("click", () => {
   let diceNum = Math.floor(Math.random() * 6) + 1;
   imgDiv.innerHTML = `<img src="./img/${diceNum}.png" alt="dice num${diceNum}" / >`;
 
-  if (diceNum == checkedInput.value) h2.innerHTML = "정답입니다.";
+  if (diceNum === Number(checkedInput.value)) h2.innerHTML = "정답입니다.";
   else h2.innerHTML = "틀렸습니다.";
   h2.style.textAlign = "center";
 });
