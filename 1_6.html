@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <script src="./script/1_6.js"></script>
+    <title>K-digital 3기 JS</title>
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <header><h1>온도변환</h1></header>
+        <form>
+          <div class="grid">
+            <select id="from" required>
+              <option value="ºC" selected>섭씨온도(ºC)</option>
+              <option value="ºF">화씨온도(ºF)</option>
+            </select>
+            <select id="to" required>
+              <option value="ºC">섭씨온도(ºC)</option>
+              <option value="ºF" selected>화씨온도(ºF)</option>
+            </select>
+          </div>
+          <div class="grid">
+            <input type="number" id="input" />
+            <div class="fromInput"></div>
+            <input type="number" id="result" readonly />
+            <div class="toInput"></div>
+          </div>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

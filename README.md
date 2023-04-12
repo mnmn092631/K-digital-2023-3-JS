@@ -2,6 +2,6 @@
 
 [Pages](https://mnmn092631.github.io/K-digital-2023-3-JS/)
 
-- 23.4.12. : 주사위게임, DOMContentLoaded
+- 23.4.12. : 주사위게임, DOMContentLoaded, changeEvent, inputEvent
 - 23.4.11. : querySelectorAll, forEach
 - 23.4.10. : HTML - Form, JavaScript - addEventListener, getElementById
