@@ -50,6 +50,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const deleteAllBtns = document.querySelectorAll("div.deleteAll > button");
+  deleteAllBtns.forEach((deleteAllBtn) => {
+    deleteAllBtn.addEventListener("click", () => {
+      switch (deleteAllBtn.innerHTML) {
+        case "사과전체삭제":
+          arr = arr.filter((item) => {
+            return item !== "🍎";
+          });
+          break;
+        case "바나나전체삭제":
+          arr = arr.filter((item) => {
+            return item !== "🍌";
+          });
+          break;
+        case "오렌지전체삭제":
+          arr = arr.filter((item) => {
+            return item !== "🍊";
+          });
+          break;
+        case "수박전체삭제":
+          arr = arr.filter((item) => {
+            return item !== "🍉";
+          });
+          break;
+      }
+      resultTxt.value = arr.join("");
+    });
+  });
+
   // 배열에 자료 변경
   const updateBtns = document.querySelectorAll("div.update > button");
   updateBtns.forEach((updateBtn) => {
