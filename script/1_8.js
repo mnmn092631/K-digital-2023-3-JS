@@ -30,15 +30,19 @@ document.addEventListener("DOMContentLoaded", () => {
     deleteBtn.addEventListener("click", () => {
       switch (deleteBtn.innerHTML) {
         case "사과삭제":
+          if (arr.lastIndexOf("🍎") === -1) break;
           arr.splice(arr.lastIndexOf("🍎"), 1);
           break;
         case "바나나삭제":
+          if (arr.lastIndexOf("🍌") === -1) break;
           arr.splice(arr.lastIndexOf("🍌"), 1);
           break;
         case "오렌지삭제":
+          if (arr.lastIndexOf("🍊") === -1) break;
           arr.splice(arr.lastIndexOf("🍊"), 1);
           break;
         case "수박삭제":
+          if (arr.lastIndexOf("🍉") === -1) break;
           arr.splice(arr.lastIndexOf("🍉"), 1);
           break;
       }
