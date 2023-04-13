@@ -20,7 +20,7 @@ const numSum = (inputTxt, resultTxt) => {
     return;
   }
 
-  let sum = numValue.split(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]+/g).reduce((acc, cur) => {
+  let sum = numValue.split(/[^0-9]+/g).reduce((acc, cur) => {
     return acc + +cur;
   }, 0);
 
