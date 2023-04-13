@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <script src="./script/1_8.js"></script>
+    <title>K-digital 3기 JS</title>
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <header><h1>배열 다루기</h1></header>
+        <form>
+          <input type="text" name="resultTxt" id="resultTxt" readonly />
+          <div class="grid create">
+            <button type="button">사과</button>
+            <button type="button">바나나</button>
+            <button type="button">오렌지</button>
+            <button type="button">수박</button>
+          </div>
+          <div class="grid delete">
+            <button type="button">사과삭제</button>
+            <button type="button">바나나삭제</button>
+            <button type="button">오렌지삭제</button>
+            <button type="button">수박삭제</button>
+          </div>
+          <div class="grid update">
+            <button type="button">사과->당근</button>
+            <button type="button">바나나->오이</button>
+            <button type="button">오렌지->아보카도</button>
+            <button type="button">수박->브로콜리</button>
+          </div>
+          <button type="button" id="reset">취소</button>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
