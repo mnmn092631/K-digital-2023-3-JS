@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         box.innerHTML = "<img src='../img/boom.png' alt='boom' />";
         h2.innerHTML = "실패";
         flag = true;
-        return;
       }
     });
   });
